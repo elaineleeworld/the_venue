@@ -17,19 +17,19 @@ const SideDrawer = props => {
   return (
     <Drawer anchor="right" open={props.open} onClose={() => props.onClose(false)}>
       <List component="nav">
-        <ListItem button onClick={() => console.log("Featured")}>
+        <ListItem button onClick={() => scrollToElement("Featured")}>
           Events starts in
         </ListItem>
-        <ListItem button onClick={() => console.log("Venue Info")}>
+        <ListItem button onClick={() => scrollToElement("VenueInfo")}>
           Venue Info
         </ListItem>
         <ListItem button onClick={() => scrollToElement("Highlights")}>
           Highlights
         </ListItem>
-        <ListItem button onClick={() => console.log("Pricing")}>
+        <ListItem button onClick={() => scrollToElement("Pricing")}>
           Pricing
         </ListItem>
-        <ListItem button onClick={() => console.log("Location")}>
+        <ListItem button onClick={() => scrollToElement("Location")}>
           Location
         </ListItem>
       </List>

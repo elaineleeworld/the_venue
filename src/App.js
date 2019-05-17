@@ -14,14 +14,23 @@ class App extends Component {
     return (
       <div className="App" style={{ height: "1500px" }}>
         <Header />
-        <Featured />
-        <VenueInfo />
+        <Element name="Featured">
+          <Featured />
+        </Element>
+        <Element name="VenueInfo">
+          <VenueInfo />
+        </Element>
         <Element name="Highlights">
           <Highlight />
         </Element>
+        <Element name="Pricing">
+          <Pricing />
+        </Element>
 
-        <Pricing />
-        <Location />
+        <Element name="Location">
+          <Location />
+        </Element>
+
         <Footer />
       </div>
     );
